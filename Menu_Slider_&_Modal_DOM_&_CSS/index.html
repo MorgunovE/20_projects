@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Menu_Slider_&_Modal_DOM_&_CSS</title>
+</head>
+<body>
+<nav>
+  <div class="logo">
+    <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="">
+  </div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact Me</a></li>
+  </ul>
+</nav>
+<header>
+  <button id="toggle" class="toggle">
+    <i class="fa fa-bars fa-2x"></i>
+  </button>
+  <h1>My landing page</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, sapiente.</p>
+  <button class="cta-btn" id="open">Sing Up</button>
+</header>
+<div class="container">
+  <h2>What is this landing page about</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi cum delectus dignissimos dolores, eius facilis fugiat, nostrum nulla quae sapiente sit temporibus voluptatum! Animi commodi distinctio exercitationem itaque ratione.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates, voluptatum. Repellat!</p>
+  <h2>Tell me more</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto assumenda aut autem blanditiis corporis cum dolorem ea eius explicabo facere fuga illum ipsa laboriosam minus molestias nisi, quibusdam recusandae, saepe sapiente sequi sunt tempora totam velit veniam vero voluptate?</p>
+  <h2>Benefits</h2>
+  <ul>
+    <li>Lifetime Access</li>
+    <li>30 Day Money Back</li>
+    <li>Tailored Customer Support</li>
+  </ul>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ratione similique vel. Ab aliquid atque cum dicta distinctio doloremque ducimus ea excepturi exercitationem iusto odit omnis pariatur perspiciatis provident, quam quia quidem quis rerum, sequi sit tenetur velit veniam voluptate!</p>
+</div>
+<div class="modal-container" id="modal">
+  <div class="modal">
+    <button class="close-btn" id="close">
+      <i class="fa fa-times"></i>
+    </button>
+    <div class="modal-header">
+      <h3>Sign Up</h3>
+    </div>
+    <div class="modal-content">
+      <p>Register with us to get offers, support and more</p>
+      <form class="modal-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Name" class="form-input">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter Email" class="form-input">
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" class="form-input">
+        </div>
+        <div>
+          <label for="password2">Conform Password</label>
+          <input type="password" id="password2" placeholder="Conform Password" class="form-input">
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
