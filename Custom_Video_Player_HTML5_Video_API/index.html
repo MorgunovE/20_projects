@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        referrerpolicy="no-referrer" rel="stylesheet"/>
+  <link href="progress.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>Custom_Video_Player_HTML5_Video_API</title>
+</head>
+<body>
+<h1>Custom_Video_Player</h1>
+<video controls class="screen" id="video" poster="img/poster.png" src="videos/gone.mp4"></video>
+<div class="controls">
+  <button class="btn" id="play">
+    <i class="fa fa-play fa-2x"></i>
+  </button>
+  <button class="btn" id="stop">
+    <i class="fa fa-stop fa-2x"></i>
+  </button>
+  <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+  <span class="timestamp" id="timestamp">00:00</span>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
